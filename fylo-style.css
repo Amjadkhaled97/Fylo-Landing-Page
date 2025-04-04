@@ -9,6 +9,8 @@
 body{
   margin:0;
   height: 100vh;
+  font-family: 'Open sans' , sans serif;
+  font-wight: 400;
   box-sizing: border-box;
   background-color: white;
   color: var(--fbg);
@@ -75,7 +77,7 @@ footer{
     border-radius: 5px;
     background-color: var(--btn);
     color:white;
-    padding: 5px;
+    padding: 8px;
     margin-left: 10px;
   }
   input{
@@ -84,6 +86,7 @@ footer{
     outline: none;
     padding: 5px;
     color: slategray;
+    height: 20px;
   }
   .one input{
     border: 1px solid lightslategray;
