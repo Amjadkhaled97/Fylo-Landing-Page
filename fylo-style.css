@@ -1,0 +1,261 @@
+:root{
+  --btn: hsl(224, 93%, 58%);
+  --fbg: hsl(243,87%,12%);
+  --bg2d:hsl(240,75%,98%);
+  --bg3d: hsl(238,22%,44%);
+  --link: hsl(170,45%,43%);
+}
+
+body{
+  margin:0;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: white;
+  color: var(--fbg);
+  font-size: 16px;
+}
+header{
+margin: auto 20px auto 20px;
+display: flex;
+justify-content: space-between;
+}
+ul{
+  list-style-type: none;
+}
+h1{
+  font-weight: bold;
+}
+nav ul{
+  display: flex;
+  padding: 20px;
+}
+nav li{
+  margin-left: 25px;
+ 
+}
+.one{
+  padding: 30px 50px 30px 50px;
+  display: flex;
+}
+.tow{
+  padding: 30px 50px 30px 50px;
+  display: flex;
+  background-color: var(--bg2d);
+  align-items: center;
+  }
+  
+.three{
+  padding: 40px 60px 40px 60px;
+  background-color: var(--bg3d);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+}
+footer{
+  color: white;
+  background-color: var(--fbg);
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  }
+  footer h3{
+    transform: translateX(14%);
+  }
+  
+  
+  footer p{
+    text-align: center;
+  }
+  footer ul{
+    margin-top:80px;
+  }
+  
+  button{
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: var(--btn);
+    color:white;
+    padding: 5px;
+    margin-left: 10px;
+  }
+  input{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    outline: none;
+    padding: 5px;
+    color: slategray;
+  }
+  .one input{
+    border: 1px solid lightslategray;
+  }
+  
+  .one img{
+  height: 300px;
+  width: 450px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.tow img{
+  height: 350px;
+  width: 450px;
+  margin-left: 10px;
+}
+.note{
+  background-color: white;
+  margin-top: 20px;
+  border-radius: 10px;
+  width: 60%;
+  height: auto;
+  padding: 15px;
+  box-shadow: 3px 3px 15px rgba(0,0, 0, 0.3);
+}
+.who{
+  display: flex;
+  align-items: center;
+}
+
+.who img{
+  width: 20%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+span{
+  font-weight: bold;
+}
+.green{
+  color: var(--link);
+  
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+.three .r{
+  padding: 10px;
+  
+}
+.three input{
+  margin-bottom: 10px;
+  width: 100%;
+  
+}
+button:hover{
+  background-color: hsl(224, 93%, 70%);
+  transition-duration:0.5s;
+  cursor: pointer;
+}
+footer li a:hover{
+  color: var(--btn);
+  transition-duration: 0.5s
+}
+.green:hover{
+  color: hsl(170,45%,65%);
+}
+
+
+   /*THIS IS MEDIA QUERIES FOR THE SITE*/
+          
+
+@media (max-width: 475px) {
+  body{
+    font-size: 14px;
+    text-align: center;
+  }
+  .one{
+    display: grid;
+    grid-template-areas: 
+    "first"
+    "second";
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .tow{
+    display: grid;
+    grid-template-areas: 
+    "first"
+    "second";
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+  }
+  .right-side{
+    grid-area: first;
+  }
+  .left-side{
+    grid-area: second;
+  }
+  .one input{
+    width: 90%;
+    border: 1px solid black;
+    border-radius: 5px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  button{
+    width: 94%;
+    
+    padding: 10px;
+   transform: translateX(-2%);
+  }
+  
+  .one img{
+    width: 250px;
+    height: auto;
+    
+  }
+  .tow img{
+    width: 250px;
+    height: auto;
+  }
+   
+   .note{
+     width: 85%;
+     height: 140px;
+     padding: 8px;
+     padding-bottom: 15px;
+     transform: translateX(6%);
+     letter-spacing: 1px;
+     font-size: 12px;
+     box-shadow: 3px 3px 13px rgba(0,0, 0, 0.3);
+   }
+   .who img{
+     width: 15%;
+     height: auto;
+     
+   }
+   .three{
+     padding: 50px;
+     padding-bottom: 20px;
+     height: 300px;
+     display: block;
+   }
+   .three input {
+     width: 90%;
+     height: 30px;
+     border: 1px solid transparent;
+     border-radius: 5px;
+   }
+    
+    footer{
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     
+    }
+   footer ul li{
+     padding: 10px;
+   }
+   footer ul{
+     margin-top: 20px;
+   }
+   footer h3{
+     transform: translateX(-14%);
+   }
+   footer p{
+     font-style: italic;
+     font-weight: bold;
+     transform: translateX(65%);
+   }
+}
